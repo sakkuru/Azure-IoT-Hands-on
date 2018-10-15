@@ -4,23 +4,13 @@
 
 ![](https://user-images.githubusercontent.com/2181352/46925697-3938cc80-d068-11e8-8511-6b424abb24b3.png)
 
-## 事前準備
-* SenseHatが正しく接続されている
-* ラズパイにRaspbianがインストールされている
-* SSHが許可されている
-* ラズパイがハンズオン時に使用するWifiにつながっている
-* 各自がラズパイのIPアドレスが分かる
+## 資料
+* [0. 準備](https://github.com/sakkuru/Azure-IoT-Hands-on/blob/master/0.%20Preparation.md)
+* [1. デバイス側の開発](https://github.com/sakkuru/Azure-IoT-Hands-on/blob/master/1.%20Device%20Side.md)
+* [2. Azure側の開発](https://github.com/sakkuru/Azure-IoT-Hands-on/blob/master/2.%20Azure%20side.md)
+* [2-0. リソースを作る前の準備](https://github.com/sakkuru/Azure-IoT-Hands-on/blob/master/2-0.%20Azure%20Preparation.md)
+* [2-1. デバイスとIoT Hubの接続](https://github.com/sakkuru/Azure-IoT-Hands-on/blob/master/2-1.%20Connect%20Device%20to%20IoT%20Hub.md)
+* [2-2. 可視化](https://github.com/sakkuru/Azure-IoT-Hands-on/blob/master/2-2.%20Visualize.md)
+* [2-3. ストリーム解析とデータストア](https://github.com/sakkuru/Azure-IoT-Hands-on/blob/master/2-3.%20Stream%20analysis%2BData%20storing.md)
+* [2-4. チャレンジ](https://github.com/sakkuru/Azure-IoT-Hands-on/blob/master/2-4.%20Challenges.md)
 
-SenseHatの接続確認
-```
-> i2cdetect -y 1
-     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
-00:          -- -- -- -- -- -- -- -- -- -- -- -- --
-10: -- -- -- -- -- -- -- -- -- -- -- -- 1c -- -- --
-20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-40: -- -- -- -- -- -- UU -- -- -- -- -- -- -- -- --
-50: -- -- -- -- -- -- -- -- -- -- -- -- 5c -- -- 5f
-60: -- -- -- -- -- -- -- -- -- -- 6a -- -- -- -- --
-70: -- -- -- -- -- -- -- --
-```
